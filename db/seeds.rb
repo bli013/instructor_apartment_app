@@ -1,13 +1,24 @@
+user = [{
+    email: "testuser1@test.com",
+    password: "testtest",
+    password_confirmation: "testtest",
+    name: "Tester",
+    phonenumber: "619-553-6578",
+    hours: "10am-4pm"
+}]
+user.each do |v|
+    User.create v
+end
 apartments = [
   {
-    street: '1111 Boring Avenue',
+    street: '123 Imfakestreet',
     city: 'San Diego',
     zipcode: '92102',
     state: 'CA',
     country: 'United States'
   },
   {
-    street: '2222 Faking Street',
+    street: '123 ABC Street',
     city: 'San Diego',
     zipcode: '92119',
     state: 'CA',
