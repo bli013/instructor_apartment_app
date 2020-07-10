@@ -7,7 +7,7 @@ class NewApartment extends React.Component {
   constructor(props){
         super(props)
         this.state = {
-          success: false,
+          success: null,
           form:{
             street: '',
             city: '',

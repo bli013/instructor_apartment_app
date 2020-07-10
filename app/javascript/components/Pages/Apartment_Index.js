@@ -17,6 +17,8 @@ class ApartmentIndex extends React.Component {
           </thead>
           <tbody>
         { this.props.apartments.map((apartment, index) => {
+        console.log("LOOK", apartment);
+        
         return(
           <tr key={ index }>
             <th scope="row"><a href = {`/apartmentindex/${apartment.id}`}>{ apartment.street }</a></th>
